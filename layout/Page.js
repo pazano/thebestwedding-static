@@ -7,10 +7,10 @@ import './Page.scss';
 export default ({ children }) => (
   <div className="main">
       <Meta />
-      <Header />
-        <div className="page parallax">
+      <div className="page parallax">
+        <Header />
           { children }
-        </div>
-      <Footer />
+        <Footer />
+      </div>
     </div>
 );

@@ -31,7 +31,7 @@ const Header = () => {
     },
     {
       label: 'Registry',
-      target: '/'
+      target: '/registry'
     }
   ];
 

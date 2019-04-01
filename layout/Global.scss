@@ -101,14 +101,15 @@ $desktop-large: 1200px;
 // Parallax
 
 .parallax {
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
 }
 
 .parallax__group {
