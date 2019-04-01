@@ -1,3 +1,5 @@
+@import '../Mixins.scss';
+
 .faq__block {
   width: 90vw;
   display: flex;
@@ -20,15 +22,33 @@
 }
 
 .faq__align-left {
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+
+  @include bp-desktop-small {
+    flex-flow: row nowrap;
+  }
+
   .faq__image {
-    margin-right: 40px;
+    margin: 0px 0px 40px 0px;
+
+    @include bp-desktop-small {
+      margin: 0px 40px 0px 0px;
+    }
   }
 }
 .faq__align-right {
-  flex-flow: row-reverse nowrap;
+  flex-flow: column nowrap;
+
+  @include bp-desktop-small {
+    flex-flow: row-reverse nowrap;
+  }
+
   .faq__image {
-    margin-left: 40px;
+    margin: 0px 0px 40px 0px;
+
+    @include bp-desktop-small {
+      margin: 0px 0px 0px 40px;
+    }
   }
 }
 
