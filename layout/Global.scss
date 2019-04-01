@@ -179,8 +179,16 @@ $desktop-large: 1200px;
   width: 90vw;
 }
 .width__medium {
-  width: 80vw;
+  width: 90vw;
+
+  @include bp-desktop-small {
+    width: 80vw;
+  }
 }
 .width__narrow {
-  width: 60vw;
+  width: 90vw;
+
+  @include bp-desktop-small {
+    width: 60vw;
+  }
 }
