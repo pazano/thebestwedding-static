@@ -15,19 +15,19 @@ const Header = () => {
   const fakeMenu = [
     {
       label: 'Our Story',
-      target: '/',
+      target: '/how-we-met',
     },
     {
       label: 'Our Day',
       target: '/our-day'
     },
     {
-      label: 'When & Where',
-      target: '/when-where'
+      label: 'Honeymoon',
+      target: '/our-honeymoon'
     },
     {
-      label: 'FAQs',
-      target: '/faqs'
+      label: 'Peep the Pics',
+      target: '/peep-the-pics'
     },
     {
       label: 'Registry',
