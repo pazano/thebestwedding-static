@@ -49,19 +49,19 @@ p {
 }
 
 a {
-  color: inherit;
+  color: $link-text;
   text-decoration: none;
   padding-bottom: .05em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgba(28, 28, 28, 0.3);
+  border-bottom-color: $link-text;
   transition:
     border-color .15s ease-out,
     color .15s ease-out;
 }
 a:hover {
-  color: rgba(28,28,28,.6);
-  border-color: rgba(28,28,28,.15);
+  color: $link-text-hover;
+  border-color: $link-text-hover;
 }
 
 // Parallax
