@@ -1,5 +1,6 @@
 import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
+import VimeoPlayer from '../layout/components/VimeoPlayer';
 
 const Index = () => (
   <Page>
@@ -19,6 +20,7 @@ const Index = () => (
           <p><em>Love,</em></p>
           <p><em>Danielle &amp; Paul</em></p>
         </div>
+        <VimeoPlayer videoId="312089492" />
       </div>
   </Page>
 );
