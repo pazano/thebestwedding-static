@@ -1,0 +1,178 @@
+/* Typography */
+/* Breakpoint Definitions */
+.titlecard {
+  width: 90vw;
+  text-align: center; }
+  .titlecard h1 {
+    color: rgba(28, 28, 28, 0.6);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 46px;
+    letter-spacing: 8px;
+    margin-bottom: 16px; }
+    @media all and (min-width: 960px) {
+      .titlecard h1 {
+        font-size: 70px;
+        letter-spacing: 11px; } }
+    @media all and (min-width: 1024px) {
+      .titlecard h1 {
+        font-size: 82px; } }
+
+.titlecard__image {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-position: center center; }
+
+/* Typography */
+/* Breakpoint Definitions */
+.faq__block {
+  width: 90vw;
+  display: flex;
+  padding-bottom: 30px; }
+
+.faq__block-border {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(28, 28, 28, 0.3);
+  margin-bottom: 30px; }
+
+.faq__image {
+  flex: 2;
+  height: 500px;
+  background-size: cover;
+  background-position: center center; }
+
+.faq__content {
+  flex: 4; }
+
+.faq__align-left {
+  flex-flow: column nowrap; }
+  @media all and (min-width: 960px) {
+    .faq__align-left {
+      flex-flow: row nowrap; } }
+  .faq__align-left .faq__image {
+    margin: 0px 0px 40px 0px; }
+    @media all and (min-width: 960px) {
+      .faq__align-left .faq__image {
+        margin: 0px 40px 0px 0px; } }
+
+.faq__align-right {
+  flex-flow: column nowrap; }
+  @media all and (min-width: 960px) {
+    .faq__align-right {
+      flex-flow: row-reverse nowrap; } }
+  .faq__align-right .faq__image {
+    margin: 0px 0px 40px 0px; }
+    @media all and (min-width: 960px) {
+      .faq__align-right .faq__image {
+        margin: 0px 0px 0px 40px; } }
+
+.faq__item {
+  margin-bottom: 40px; }
+
+/* Typography */
+/* Breakpoint Definitions */
+/* Typography */
+/* Breakpoint Definitions */
+.hero {
+  grid-area: hero;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end; }
+  .hero h1 {
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 300;
+    letter-spacing: 11px;
+    line-height: 56px;
+    text-align: center; }
+    @media all and (min-width: 960px) {
+      .hero h1 {
+        font-size: 66px;
+        line-height: 76px; } }
+    @media all and (min-width: 1024px) {
+      .hero h1 {
+        font-size: 76px;
+        line-height: 86px; } }
+    @media all and (min-width: 1200px) {
+      .hero h1 {
+        font-size: 100px;
+        line-height: 100px; } }
+
+.hero__large {
+  height: calc(100vh - 80px); }
+
+.hero__medium {
+  height: calc(85vh - 80px); }
+
+.hero__small {
+  height: calc(70vh - 80px); }
+
+.hero__image {
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+.hero__content {
+  color: #333;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 95vw;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.hero__content p {
+  text-align: center;
+  padding: 0px 8px; }
+
+.spacer {
+  border: solid 0.5px #888;
+  width: 20%; }
+
+/* Typography */
+/* Breakpoint Definitions */
+/* Typography */
+/* Breakpoint Definitions */
+.player {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  .player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.cta__block {
+  margin: 40px 0px; }
+
+.cta__action {
+  font-family: 'futura-pt', 'sans-serif';
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-color: #0d0d0d;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  padding: 13px 26px;
+  transition: background-color 0.1s ease-out, color 0.1s ease-out; }
+
+.cta__action:hover {
+  color: #fff;
+  background-color: #0d0d0d;
+  border-color: #0d0d0d; }
+
