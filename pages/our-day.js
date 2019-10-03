@@ -1,8 +1,12 @@
 import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
 
-const Index = () => (
-  <Page>
+const seo = {
+  title: 'About Our Day',
+}
+
+const OurDay = () => (
+  <Page seo={seo} >
     <TitleCard
       title="About Our Day"
       image="/static/images/Danielle+and+Paul-13.jpg"
@@ -42,4 +46,4 @@ const Index = () => (
   </Page>
 );
 
-export default Index;
+export default OurDay;

@@ -2,8 +2,12 @@ import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
 import VimeoPlayer from '../layout/components/VimeoPlayer';
 
-const Index = () => (
-  <Page>
+const seo = {
+  title: 'Peep the Pics',
+}
+
+const Pics = () => (
+  <Page seo={seo} >
     <TitleCard
       title="Check out the Photos"
       image="/static/images/photos-hero.jpg"
@@ -25,4 +29,4 @@ const Index = () => (
   </Page>
 );
 
-export default Index;
+export default Pics;
