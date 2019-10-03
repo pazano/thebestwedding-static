@@ -1,8 +1,12 @@
 import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
 
-const Index = () => (
-  <Page>
+const seo = {
+  title: 'Our Honeymoon',
+}
+
+const Honeymoon = () => (
+  <Page seo={seo} >
     <TitleCard
       title="Honeymoon Memories"
       image="/static/images/honeymoon-hero.jpg"
@@ -24,4 +28,4 @@ const Index = () => (
   </Page>
 );
 
-export default Index;
+export default Honeymoon;
