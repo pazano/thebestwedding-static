@@ -145,7 +145,8 @@ var _jsxFileName = "/Users/paul/Projects/Wedding/website/layout/Meta.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Meta = function Meta() {
+var Meta = function Meta(_ref) {
+  var seo = _ref.seo;
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
@@ -167,7 +168,13 @@ var Meta = function Meta() {
       lineNumber: 7
     },
     __self: this
-  }));
+  }), __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "".concat(seo.title, " | Paul + Danielle")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);
@@ -198,7 +205,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var children = _ref.children;
+  var seo = _ref.seo,
+      children = _ref.children;
   return __jsx("div", {
     className: "main",
     __source: {
@@ -207,6 +215,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx(_Meta_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    seo: seo,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -21674,12 +21683,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+var seo = {
+  title: 'Home'
+};
 
 var Index = function Index() {
   return __jsx(_layout_Page__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    seo: seo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 10
     },
     __self: this
   }, __jsx(_layout_components_Hero__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -21688,95 +21701,95 @@ var Index = function Index() {
     height: "large",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 11
     },
     __self: this
   }), __jsx("div", {
     className: "content padding__medium",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 16
     },
     __self: this
   }, __jsx("div", {
     className: "content__copy width__narrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
   }, "So we got a rock to celebrate it. #ringjokes"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     },
     __self: this
   }, "And now we want to celebrate our love story with you! We are so excited to spend our wedding day among the people most special to us and we are hoping you will be able to join the celebration! We sincerely hope all of you will be able to join us, no matter how long it has been since we made our last memory together. We invited you because in some way or another we feel that you have changed our life for the better and we want to spend a day that changes our lives for the better with all of you together."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     },
     __self: this
   }, "\xA0")), __jsx("div", {
     className: "content__callout width__narrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: this
   }, "As Flo Rida said, it's goin' down for real:"), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 23
     },
     __self: this
   }, "OCTOBER 13, 2018"), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 24
     },
     __self: this
   }, "THE LIVING DESERT"), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 25
     },
     __self: this
   }, "PALM DESERT, CA"), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 26
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "our-day",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 26
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 26
     },
     __self: this
   }, "DETAILS HERE"))), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 27
     },
     __self: this
   }, "THANK YOU SO MUCH FOR EVERYONE WHO JOINED OUR DAY IN PERSON OR IN SPIRIT TO MAKE EVERY MOMENT SPECIAL! We can\u2019t wait to show you the photos and relive the day again soon.\xA0"))));
