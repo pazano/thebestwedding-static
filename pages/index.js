@@ -2,8 +2,12 @@ import Page from '../layout/Page';
 import Hero from '../layout/components/Hero';
 import Link from 'next/link';
 
+const seo = {
+  title: 'Home',
+}
+
 const Index = () => (
-  <Page>
+  <Page seo={seo} >
     <Hero
       text="Our Love Rocks."
       image="/static/images/danielle_paul-IMG_6010.jpg"

@@ -2,8 +2,12 @@ import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
 import { FAQBlock, FAQItem } from '../layout/components/FAQ';
 
+const seo = {
+  title: 'FAQs'
+}
+
 const FAQs = () => (
-  <Page>
+  <Page seo={seo} >
     <TitleCard
       title="FAQs"
       lede="You got questions. We got answers. And if we don't answer them here... ask it anyway and we'll try to answer as best we can!"

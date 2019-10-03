@@ -1,10 +1,13 @@
 import Page from '../layout/Page';
 import Hero from '../layout/components/Hero';
 import CTA from '../layout/components/CTA';
-import Link from 'next/link';
+
+const seo = {
+  title: 'Registry',
+}
 
 const Registry = () => (
-  <Page>
+  <Page seo={seo} >
     <Hero
       text="Memories > Stuff"
       image="/static/images/danielle_paul-IMG_6115.jpg"
@@ -18,7 +21,7 @@ const Registry = () => (
       </div>
       <div className="content__callout width__narrow">
         <CTA
-        label="View our Registry"
+          label="View our Registry"
           target="https://www.zola.com/registry/danielleandpaulrock"
         />
       </div>

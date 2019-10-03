@@ -1,8 +1,12 @@
 import Page from '../layout/Page';
 import Hero from '../layout/components/Hero';
 
-const Index = () => (
-  <Page>
+const seo = {
+  title: 'How We Met',
+}
+
+const OurStory = () => (
+  <Page seo={seo} >
     <Hero
       text="How We Met"
       image="/static/images/danielle_paul-IMG_6546.jpg"
@@ -66,4 +70,4 @@ const Index = () => (
   </Page>
 );
 
-export default Index;
+export default OurStory;

@@ -2,8 +2,12 @@ import Page from '../layout/Page';
 import Hero from '../layout/components/Hero';
 import CTA from '../layout/components/CTA';
 
-const Index = () => (
-  <Page>
+const seo = {
+  title: 'When and Where',
+}
+
+const WhenWhere = () => (
+  <Page seo={seo} >
     <Hero
       text="October 13, 2018"
       image="/static/images/danielle_paul-IMG_0460.jpg"
@@ -74,4 +78,4 @@ const Index = () => (
   </Page>
 );
 
-export default Index;
+export default WhenWhere;
