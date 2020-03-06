@@ -6,30 +6,48 @@ const seo = {
   title: 'Our Honeymoon',
 }
 
-const galleryImages = [
-  { url: '/static/images/honeymoon/001.jpg',
-    alt: 'Danielle at the Parthenon',
-    width: 'half'
-  },
-  { url: '/static/images/honeymoon/002.jpg',
-    alt: 'Paul at the Parthenon',
-    width: 'half'
-  },
-  {
-    url: '/static/images/honeymoon/008.jpg',
-    alt: 'Holding hands, showing off Danielle\'s Ring',
-    width: 'full'
-  },
-  {
-    url: '/static/images/honeymoon/003.jpg',
-    alt: 'Paul at the Pink Beach on Crete',
-    width: 'half'
-  },
-  {
-    url: '/static/images/honeymoon/004.jpg',
-    alt: 'Danielle at the Pink Beach on Crete',
-    width: 'half'
-  },
+const galleryRows = [
+  [
+    { url: '/static/images/honeymoon/001.jpg',
+      alt: 'Danielle at the Parthenon',
+      aspect: 'portrait'
+    },
+    { url: '/static/images/honeymoon/002.jpg',
+      alt: 'Paul at the Parthenon',
+      aspect: 'portrait'
+    },
+  ],
+  [
+    {
+      url: '/static/images/honeymoon/008.jpg',
+      alt: 'Holding hands, showing off Danielle\'s Ring',
+      aspect: 'landscape'
+    },
+  ],
+  [
+    {
+      url: '/static/images/honeymoon/003.jpg',
+      alt: 'Paul at the Pink Beach on Crete',
+      aspect: 'portrait'
+    },
+    {
+      url: '/static/images/honeymoon/004.jpg',
+      alt: 'Danielle at the Pink Beach on Crete',
+      aspect: 'portrait'
+    },
+  ],
+  [
+    {
+      url: '/static/images/honeymoon/013.jpg',
+      alt: 'Paul at the Pink Beach on Crete',
+      aspect: 'landscape'
+    },
+    {
+      url: '/static/images/honeymoon/010.jpg',
+      alt: 'Danielle at the Pink Beach on Crete',
+      aspect: 'portrait'
+    },
+  ]
 ]
 
 const Honeymoon = () => (
@@ -50,7 +68,9 @@ const Honeymoon = () => (
           <p>If you’d like to see some photos from our trip, please feel free to scroll the gallery below or follow Danielle on <a href="http://instagram.com/hodgepodger" target="_blank">Instagram</a>.</p>
           <p><em>Love,</em></p>
           <p><em>Danielle &amp; Paul</em></p>
-          <Gallery galleryImages={galleryImages} />
+        </div>
+        <div className="content__copy width__narrow">
+          <Gallery galleryRows={galleryRows} />
         </div>
       </div>
 

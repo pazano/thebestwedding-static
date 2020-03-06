@@ -10,6 +10,7 @@
 }
 
 .navigation__mobile-menu {
+  cursor: pointer;
   @include bp-desktop-small {
     display: none;
   }

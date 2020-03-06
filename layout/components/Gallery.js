@@ -3,29 +3,44 @@ import './Gallery.scss';
 
 // TODO:  update image object structure
 
-const GalleryImage = ({ width, url, alt, key }) => {
-  const imageClassName = width == 'full' ? 'gallery__image-full' : 'gallery__image-half';
+const GalleryImageRow = ({ galleryImages }) => {
+  const rowClassName = galleryImages.reduce((result, galleryImage) => result ? result + '-' + galleryImage.aspect : galleryImage.aspect, "");
+  let counter = 0;
+  return(
+    <div className={`gallery__row ${rowClassName}`}>
+      { galleryImages &&
+        galleryImages.map(({ url, alt }) =>
+          <GalleryImage
+            url={url}
+            alt={alt}
+            style={`image-${counter}`}
+            key={`gallery-image=${++counter}`}
+          />
+        )
+      }
+    </div>
+  )
+}
+
+const GalleryImage = ({ url, alt, style, key }) => {
   return (
     <Image
-      className={imageClassName}
       url={url}
       alt={alt}
+      className={style}
       key={key}
     />
   )
 }
 
-const Gallery = ({ galleryImages }) => {
-  let counter = 0;
+// takes in a row
+const Gallery = ({ galleryRows }) => {
   return (
     <div className="gallery__container">
-      { galleryImages &&
-        galleryImages.map(({ width, url, alt }) =>
-          <GalleryImage
-            width={width}
-            url={url}
-            alt={alt}
-            key={`gallery-image=${++counter}`}
+      { galleryRows &&
+        galleryRows.map(( images ) =>
+          <GalleryImageRow
+            galleryImages={images}
           />)
       }
     </div>
