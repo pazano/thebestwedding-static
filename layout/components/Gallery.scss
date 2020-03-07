@@ -1,6 +1,9 @@
 @import '../Variables.scss';
 @import '../Mixins.scss';
 
+$row__tall: repeat(4, 110px);
+$row__wide: repeat(4, 72px);
+
 .gallery__container {
   display: flex;
   flex-flow: row wrap;
@@ -18,7 +21,6 @@
 .gallery__row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 110px);
   grid-gap: 8px 8px;
   margin-bottom: 8px;
 }
@@ -34,6 +36,7 @@
 }
 
 .portrait-portrait {
+  grid-template-rows: $row__tall;
   grid-template-areas:
     "one one one two two two"
     "one one one two two two"
@@ -42,6 +45,7 @@
 }
 
 .landscape {
+  grid-template-rows: $row__wide;
   grid-template-areas:
     "one one one one one one"
     "one one one one one one"
@@ -50,6 +54,7 @@
 }
 
 .landscape-portrait {
+  grid-template-rows: $row__wide;
   grid-template-areas:
     "one one one one two two"
     "one one one one two two"
@@ -58,6 +63,7 @@
 }
 
 .landscape-landscape-portrait {
+  grid-template-rows: $row__tall;
   grid-template-areas:
     "one one one three three three"
     "one one one three three three"
