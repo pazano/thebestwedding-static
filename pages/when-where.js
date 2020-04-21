@@ -10,12 +10,12 @@ const WhenWhere = () => (
   <Page seo={seo} >
     <Hero
       text="October 13, 2018"
-      image="/static/images/danielle_paul-IMG_0460.jpg"
+      image="/images/danielle_paul-IMG_0460.jpg"
       height="large"
     />
     <Hero
       text="Palm Desert, CA"
-      image="/static/images/babygotbokeh_INSTAGRAM_001-8.jpg"
+      image="/images/babygotbokeh_INSTAGRAM_001-8.jpg"
       height="large"
     />
       <div className="content padding__low">
@@ -53,7 +53,7 @@ const WhenWhere = () => (
       </div>
     <Hero
       text="Wear Your Dancing Shoes"
-      image="/static/images/danielle_paul-IMG_6684.jpg"
+      image="/images/danielle_paul-IMG_6684.jpg"
       height="large"
     />
       <div className="content padding__high">
@@ -72,7 +72,7 @@ const WhenWhere = () => (
       </div>
     <Hero
       text="Party On Dudes!"
-      image="/static/images/danielle_paul-IMG_6906.jpg"
+      image="/images/danielle_paul-IMG_6906.jpg"
       height="large"
     />
   </Page>

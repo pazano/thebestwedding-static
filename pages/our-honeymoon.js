@@ -8,42 +8,42 @@ const seo = {
 
 const galleryRows = [
   [
-    { url: '/static/images/honeymoon/001.jpg',
+    { url: '/images/honeymoon/001.jpg',
       alt: 'Danielle at the Parthenon',
       aspect: 'portrait'
     },
-    { url: '/static/images/honeymoon/002.jpg',
+    { url: '/images/honeymoon/002.jpg',
       alt: 'Paul at the Parthenon',
       aspect: 'portrait'
     },
   ],
   [
     {
-      url: '/static/images/honeymoon/008.jpg',
+      url: '/images/honeymoon/008.jpg',
       alt: 'Holding hands, showing off Danielle\'s Ring',
       aspect: 'landscape'
     },
   ],
   [
     {
-      url: '/static/images/honeymoon/003.jpg',
+      url: '/images/honeymoon/003.jpg',
       alt: 'Paul at the Pink Beach on Crete',
       aspect: 'portrait'
     },
     {
-      url: '/static/images/honeymoon/004.jpg',
+      url: '/images/honeymoon/004.jpg',
       alt: 'Danielle at the Pink Beach on Crete',
       aspect: 'portrait'
     },
   ],
   [
     {
-      url: '/static/images/honeymoon/013.jpg',
+      url: '/images/honeymoon/013.jpg',
       alt: 'Paul at the Pink Beach on Crete',
       aspect: 'landscape'
     },
     {
-      url: '/static/images/honeymoon/010.jpg',
+      url: '/images/honeymoon/010.jpg',
       alt: 'Danielle at the Pink Beach on Crete',
       aspect: 'portrait'
     },
@@ -54,7 +54,7 @@ const Honeymoon = () => (
   <Page seo={seo} >
     <TitleCard
       title="Honeymoon Memories"
-      image="/static/images/honeymoon-hero.jpg"
+      image="/images/honeymoon-hero.jpg"
     />
       <div className="content ">
         <div className="content__copy width__narrow">

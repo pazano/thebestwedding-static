@@ -14,7 +14,7 @@ const FAQs = () => (
     />
     <div className="content">
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_0427.jpg"
+        image="/images/danielle_paul-IMG_0427.jpg"
         alignment="left"
         border={true}
       >
@@ -31,7 +31,7 @@ const FAQs = () => (
       </FAQBlock>
 
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_0096.jpg"
+        image="/images/danielle_paul-IMG_0096.jpg"
         alignment="right"
         border={true}
       >
@@ -46,7 +46,7 @@ const FAQs = () => (
       </FAQBlock>
 
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_6767.jpg"
+        image="/images/danielle_paul-IMG_6767.jpg"
         alignment="left"
         border={false}
       >
