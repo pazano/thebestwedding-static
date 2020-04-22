@@ -9,11 +9,13 @@ const GalleryImageRow = ({ galleryImages }) => {
   return(
     <div className={`gallery__row ${rowClassName}`}>
       { galleryImages &&
-        galleryImages.map(({ url, alt }) =>
+        galleryImages.map(({ url, alt, aspect, ratio }) =>
           <GalleryImage
             url={url}
             alt={alt}
             style={`image-${counter}`}
+            aspect={aspect}
+            ratio={ratio}
             key={`gallery-image=${++counter}`}
           />
         )
@@ -22,12 +24,15 @@ const GalleryImageRow = ({ galleryImages }) => {
   )
 }
 
-const GalleryImage = ({ url, alt, style, key }) => {
+const GalleryImage = ({ url, alt, style, aspect, ratio, key }) => {
   return (
     <Image
       url={url}
       alt={alt}
       className={style}
+      aspect={aspect}
+      ratio={ratio}
+      respectAspect={true}
       key={key}
     />
   )

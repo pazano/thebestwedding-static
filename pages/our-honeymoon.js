@@ -10,42 +10,49 @@ const galleryRows = [
   [
     { url: '/images/honeymoon/001.jpg',
       alt: 'Danielle at the Parthenon',
-      aspect: 'portrait'
+      aspect: 'portrait',
+      ratio: '2x3'
     },
     { url: '/images/honeymoon/002.jpg',
       alt: 'Paul at the Parthenon',
-      aspect: 'portrait'
+      aspect: 'portrait',
+      ratio: '2x3'
     },
   ],
   [
     {
       url: '/images/honeymoon/008.jpg',
       alt: 'Holding hands, showing off Danielle\'s Ring',
-      aspect: 'landscape'
+      aspect: 'landscape',
+      ratio: '3x2'
     },
   ],
   [
     {
       url: '/images/honeymoon/003.jpg',
       alt: 'Paul at the Pink Beach on Crete',
-      aspect: 'portrait'
+      aspect: 'portrait',
+      ratio: '2x3'
     },
     {
       url: '/images/honeymoon/004.jpg',
       alt: 'Danielle at the Pink Beach on Crete',
-      aspect: 'portrait'
+      aspect: 'portrait',
+      ratio: '2x3'
     },
   ],
   [
     {
       url: '/images/honeymoon/013.jpg',
       alt: 'Paul at the Pink Beach on Crete',
-      aspect: 'landscape'
+      aspect: 'landscape',
+      ratio: '3x2'
     },
     {
       url: '/images/honeymoon/010.jpg',
       alt: 'Danielle at the Pink Beach on Crete',
-      aspect: 'portrait'
+      aspect: 'portrait',
+      ratio: '2x3'
     },
   ]
 ]
