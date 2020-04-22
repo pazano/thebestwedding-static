@@ -14,17 +14,17 @@
     margin-bottom: 16px;
 
     @include bp-desktop-small {
-      font-size: 70px;
+      font-size: 60px;
       letter-spacing: 11px;
     }
-    @include bp-desktop-large {
-      font-size: 82px;
-    }
+    // @include bp-desktop-large {
+    //   font-size: 82px;
+    // }
   }
 }
 .titlecard__image {
   width: 100%;
-  height: 250px;
+  height: 300px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     height: 400px;
   }
 
-  @include bp-tablet {
+  @include bp-desktop-small {
     height: 600px;
   }
 

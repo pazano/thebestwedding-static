@@ -69,6 +69,9 @@ a:hover {
   .content__copy {
     margin: 0 auto;
   }
+  .content__copy > * {
+    margin: 16px;
+  }
 
   .content__callout {
     text-align: center;
@@ -89,19 +92,25 @@ a:hover {
 }
 
 .width__wide {
-  width: 90vw;
+  width: 96vw;
 }
+
 .width__medium {
-  width: 90vw;
+  width: 96vw;
 
   @include bp-desktop-small {
     width: 80vw;
   }
 }
+
 .width__narrow {
-  width: 90vw;
+  width: 96vw;
 
   @include bp-desktop-small {
     width: 60vw;
+  }
+
+  @include bp-desktop-medium {
+    width: 70vw;
   }
 }

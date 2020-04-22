@@ -1,13 +1,10 @@
 @import '../Variables.scss';
 @import '../Mixins.scss';
 
-$row__tall: repeat(4, 110px);
-$row__wide: repeat(4, 72px);
+$gallery__grid-unit: 6vw;
 
 .gallery__container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
+  margin: 16px;
 
   picture {
     img {
@@ -20,7 +17,7 @@ $row__wide: repeat(4, 72px);
 
 .gallery__row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, $gallery__grid-unit);
   grid-gap: 8px 8px;
   margin-bottom: 8px;
 }
@@ -36,39 +33,39 @@ $row__wide: repeat(4, 72px);
 }
 
 .portrait-portrait {
-  grid-template-rows: $row__tall;
+  grid-template-rows: repeat(9, $gallery__grid-unit);
   grid-template-areas:
-    "one one one two two two"
-    "one one one two two two"
-    "one one one two two two"
-    "one one one two two two";
+    "one one one one one one two two two two two two"
+    "one one one one one one two two two two two two"
+    "one one one one one one two two two two two two"
+    "one one one one one one two two two two two two"
+    "one one one one one one two two two two two two"
+    "one one one one one one two two two two two two";
 }
 
 .landscape {
-  grid-template-rows: $row__wide;
+  grid-template-rows: repeat(8, $gallery__grid-unit);
   grid-template-areas:
-    "one one one one one one"
-    "one one one one one one"
-    "one one one one one one"
-    "one one one one one one";
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    "one one one one one one one one one one one one"
+    ;
 }
 
 .landscape-portrait {
-  grid-template-rows: $row__wide;
+  grid-template-rows: repeat(6, $gallery__grid-unit);
   grid-template-areas:
-    "one one one one two two"
-    "one one one one two two"
-    "one one one one two two"
-    "one one one one two two"
-}
-
-.landscape-landscape-portrait {
-  grid-template-rows: $row__tall;
-  grid-template-areas:
-    "one one one three three three"
-    "one one one three three three"
-    "two two two three three three"
-    "two two two three three three"
+    "one one one one one one one one two two two two"
+    "one one one one one one one one two two two two"
+    "one one one one one one one one two two two two"
+    "one one one one one one one one two two two two"
+    "one one one one one one one one two two two two"
+    "one one one one one one one one two two two two"
 }
 
 .gallery__image-full {
