@@ -16,22 +16,27 @@ const Header = () => {
     {
       label: 'Our Story',
       target: '/how-we-met',
+      key: 'menu-our-story'
     },
     {
       label: 'Our Day',
-      target: '/our-day'
+      target: '/our-day',
+      key: 'menu-our-day'
     },
     {
       label: 'Honeymoon',
-      target: '/our-honeymoon'
+      target: '/our-honeymoon',
+      key: 'menu-honeymoon'
     },
     {
       label: 'Peep the Pics',
-      target: '/peep-the-pics'
+      target: '/peep-the-pics',
+      key: 'menu-pics'
     },
     {
       label: 'Registry',
-      target: '/registry'
+      target: '/registry',
+      key: 'menu-registry'
     }
   ];
 

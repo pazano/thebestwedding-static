@@ -21,6 +21,7 @@
   grid-area: logo;
   justify-self: start;
   padding-left: 16px;
+  cursor: pointer;
 
   @include bp-desktop-small {
     padding-left: 32px;

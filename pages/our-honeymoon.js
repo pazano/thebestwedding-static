@@ -1,19 +1,71 @@
 import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
+import Gallery from '../layout/components/Gallery';
 
 const seo = {
   title: 'Our Honeymoon',
 }
 
+const galleryRows = [
+  [
+    { url: '/images/honeymoon/001.jpg',
+      alt: 'Danielle at the Parthenon',
+      aspect: 'portrait',
+      ratio: '2x3'
+    },
+    { url: '/images/honeymoon/002.jpg',
+      alt: 'Paul at the Parthenon',
+      aspect: 'portrait',
+      ratio: '2x3'
+    },
+  ],
+  [
+    {
+      url: '/images/honeymoon/008.jpg',
+      alt: 'Holding hands, showing off Danielle\'s Ring',
+      aspect: 'landscape',
+      ratio: '3x2'
+    },
+  ],
+  [
+    {
+      url: '/images/honeymoon/003.jpg',
+      alt: 'Paul at the Pink Beach on Crete',
+      aspect: 'portrait',
+      ratio: '2x3'
+    },
+    {
+      url: '/images/honeymoon/004.jpg',
+      alt: 'Danielle at the Pink Beach on Crete',
+      aspect: 'portrait',
+      ratio: '2x3'
+    },
+  ],
+  [
+    {
+      url: '/images/honeymoon/013.jpg',
+      alt: 'Paul at the Pink Beach on Crete',
+      aspect: 'landscape',
+      ratio: '3x2'
+    },
+    {
+      url: '/images/honeymoon/010.jpg',
+      alt: 'Danielle at the Pink Beach on Crete',
+      aspect: 'portrait',
+      ratio: '2x3'
+    },
+  ]
+]
+
 const Honeymoon = () => (
   <Page seo={seo} >
     <TitleCard
       title="Honeymoon Memories"
-      image="/static/images/honeymoon-hero.jpg"
+      image="/images/honeymoon-hero.jpg"
     />
       <div className="content ">
         <div className="content__copy width__narrow">
-          <h3 >fROM MINI-MOON TO MAXI-MOON…</h3>
+          <h3 >From Mini-Moon to Maxi-Moon…</h3>
           <p>After our wedding, we were lucky enough to celebrate our newlywed life with a quick mini-moon in Hawaii! (Shout out to our friends, Ko and Jess who got married while we were there!)</p>
           <p>Once Paul had accrued some vacation days after all the time off for the wedding (#thisamericanlife), we hopped on a plane at LAX with a dream and a cardigan, one of which was lost with our luggage when we arrived in Croatia. Thankfully it was the latter.</p>
           <p>Together we toured the coast of the country, drinking wine (it’s like $2 a glass), eating truffles (which are surprisingly cheap there!), and devouring seafood (also cheap!) We visited a number of Game of Thrones locations, and even got drunk where the dragons were held.</p>
@@ -24,7 +76,11 @@ const Honeymoon = () => (
           <p><em>Love,</em></p>
           <p><em>Danielle &amp; Paul</em></p>
         </div>
+        <div className="content__gallery">
+          <Gallery galleryRows={galleryRows} />
+        </div>
       </div>
+
   </Page>
 );
 
