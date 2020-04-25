@@ -299,7 +299,7 @@ var GalleryImageRow = function GalleryImageRow(_ref) {
       style: "image-".concat(counter),
       ratio: ratio,
       respectAspect: aspectCount > 1 ? false : true,
-      key: "gallery-image=".concat(++counter),
+      key: "gallery-image-".concat(++counter),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
@@ -21709,7 +21709,7 @@ var Honeymoon = function Honeymoon() {
 
 /***/ }),
 
-/***/ 8:
+/***/ 2:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Four-honeymoon&absolutePagePath=%2FUsers%2Fpaul%2FProjects%2F_Sites%2FWedding%2Fpages%2Four-honeymoon.js ***!
   \******************************************************************************************************************************************************/
@@ -21732,5 +21732,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=our-honeymoon.js.map

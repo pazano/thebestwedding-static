@@ -18,7 +18,7 @@ const GalleryImageRow = ({ galleryImages }) => {
             style={`image-${counter}`}
             ratio={ratio}
             respectAspect={aspectCount > 1 ? false : true}
-            key={`gallery-image=${++counter}`}
+            key={`gallery-image-${++counter}`}
           />
         )
       }
