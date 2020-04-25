@@ -9,7 +9,7 @@ const OurStory = () => (
   <Page seo={seo} >
     <Hero
       text="How We Met"
-      image="/static/images/danielle_paul-IMG_6546.jpg"
+      image="/images/danielle_paul-IMG_6546.jpg"
       height="small"
     />
     <div className="content padding__medium">
@@ -24,7 +24,7 @@ const OurStory = () => (
     </div>
     <Hero
       text="How He Asked"
-      image="/static/images/babygotbokeh_INSTAGRAM_001-2.jpg"
+      image="/images/babygotbokeh_INSTAGRAM_001-2.jpg"
       height="large"
     />
     <div className="content padding__medium">
@@ -53,7 +53,7 @@ const OurStory = () => (
     </div>
     <Hero
       text="She Said Yes"
-      image="/static/images/danielle_paul-IMG_6185.jpg"
+      image="/images/danielle_paul-IMG_6185.jpg"
       height="medium"
     />
     <div className="content padding__medium">
@@ -64,7 +64,7 @@ const OurStory = () => (
     </div>
     <Hero
       text="Let the Adventure Begin"
-      image="/static/images/danielle_paul-IMG_6873.jpg"
+      image="/images/danielle_paul-IMG_6873.jpg"
       height="large"
     />
   </Page>

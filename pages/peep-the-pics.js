@@ -10,7 +10,7 @@ const Pics = () => (
   <Page seo={seo} >
     <TitleCard
       title="Check out the Photos"
-      image="/static/images/photos-hero.jpg"
+      image="/images/photos-hero.jpg"
     />
       <div className="content ">
         <div className="content__copy width__narrow">

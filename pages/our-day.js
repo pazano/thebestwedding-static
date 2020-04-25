@@ -9,7 +9,7 @@ const OurDay = () => (
   <Page seo={seo} >
     <TitleCard
       title="About Our Day"
-      image="/static/images/Danielle+and+Paul-13.jpg"
+      image="/images/Danielle+and+Paul-13.jpg"
     />
       <div className="content ">
         <div className="content__copy width__narrow">

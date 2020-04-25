@@ -10,7 +10,7 @@ const Registry = () => (
   <Page seo={seo} >
     <Hero
       text="Memories > Stuff"
-      image="/static/images/danielle_paul-IMG_6115.jpg"
+      image="/images/danielle_paul-IMG_6115.jpg"
       height="large"
     />
     <div className="content padding__low">

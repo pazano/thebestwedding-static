@@ -10,7 +10,7 @@ const Index = () => (
   <Page seo={seo} >
     <Hero
       text="Our Love Rocks."
-      image="/static/images/danielle_paul-IMG_6010.jpg"
+      image="/images/danielle_paul-IMG_6010.jpg"
       height="large"
     />
       <div className="content padding__medium">
