@@ -76,6 +76,15 @@ a:hover {
   .content__callout {
     text-align: center;
   }
+
+  .content__gallery {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 4fr 12fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". gallery .";
+  }
+
 }
 
 .padding__high {

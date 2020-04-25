@@ -76,7 +76,7 @@ const Honeymoon = () => (
           <p><em>Love,</em></p>
           <p><em>Danielle &amp; Paul</em></p>
         </div>
-        <div className="content__copy width__narrow">
+        <div className="content__gallery">
           <Gallery galleryRows={galleryRows} />
         </div>
       </div>
