@@ -86,38 +86,43 @@ var Logo = function Logo() {
 var Header = function Header() {
   var fakeMenu = [{
     label: 'Our Story',
-    target: '/how-we-met'
+    target: '/how-we-met',
+    key: 'menu-our-story'
   }, {
     label: 'Our Day',
-    target: '/our-day'
+    target: '/our-day',
+    key: 'menu-our-day'
   }, {
     label: 'Honeymoon',
-    target: '/our-honeymoon'
+    target: '/our-honeymoon',
+    key: 'menu-honeymoon'
   }, {
     label: 'Peep the Pics',
-    target: '/peep-the-pics'
+    target: '/peep-the-pics',
+    key: 'menu-pics'
   }, {
     label: 'Registry',
-    target: '/registry'
+    target: '/registry',
+    key: 'menu-registry'
   }];
   return __jsx("div", {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }, __jsx(_components_Navigation__WEBPACK_IMPORTED_MODULE_1__["default"], {
     menuItems: fakeMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: this
   }), __jsx(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: this
   }));
@@ -222,7 +227,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }), __jsx("div", {
-    className: "page parallax",
+    className: "page",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -271,14 +276,14 @@ var Hero = function Hero(_ref) {
     backgroundImage: "url('".concat(image, "')")
   };
   return __jsx("div", {
-    className: "parallax__group hero ".concat(height === 'large' ? 'hero__large' : height == 'medium' ? 'hero__medium' : 'hero__small'),
+    className: "hero ".concat(height === 'large' ? 'hero__large' : height == 'medium' ? 'hero__medium' : 'hero__small'),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, __jsx("div", {
-    className: "hero__image parallax__layer parallax__layer-back",
+    className: "hero__image",
     style: imageStyle,
     __source: {
       fileName: _jsxFileName,
@@ -286,7 +291,7 @@ var Hero = function Hero(_ref) {
     },
     __self: this
   }), __jsx("div", {
-    className: "hero__content parallax__layer parallax__layer-base",
+    className: "hero__content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -449,6 +454,7 @@ function (_Component) {
         return __jsx(NavigationItem, {
           label: item.label,
           target: item.target,
+          key: item.key,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 48
@@ -21327,7 +21333,7 @@ var Index = function Index() {
     __self: this
   }, __jsx(_layout_components_Hero__WEBPACK_IMPORTED_MODULE_2__["default"], {
     text: "Our Love Rocks.",
-    image: "/static/images/danielle_paul-IMG_6010.jpg",
+    image: "/images/danielle_paul-IMG_6010.jpg",
     height: "large",
     __source: {
       fileName: _jsxFileName,

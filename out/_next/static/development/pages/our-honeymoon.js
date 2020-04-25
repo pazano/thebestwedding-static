@@ -86,38 +86,43 @@ var Logo = function Logo() {
 var Header = function Header() {
   var fakeMenu = [{
     label: 'Our Story',
-    target: '/how-we-met'
+    target: '/how-we-met',
+    key: 'menu-our-story'
   }, {
     label: 'Our Day',
-    target: '/our-day'
+    target: '/our-day',
+    key: 'menu-our-day'
   }, {
     label: 'Honeymoon',
-    target: '/our-honeymoon'
+    target: '/our-honeymoon',
+    key: 'menu-honeymoon'
   }, {
     label: 'Peep the Pics',
-    target: '/peep-the-pics'
+    target: '/peep-the-pics',
+    key: 'menu-pics'
   }, {
     label: 'Registry',
-    target: '/registry'
+    target: '/registry',
+    key: 'menu-registry'
   }];
   return __jsx("div", {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }, __jsx(_components_Navigation__WEBPACK_IMPORTED_MODULE_1__["default"], {
     menuItems: fakeMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: this
   }), __jsx(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: this
   }));
@@ -222,7 +227,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }), __jsx("div", {
-    className: "page parallax",
+    className: "page",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -242,6 +247,189 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   })));
 });
+
+/***/ }),
+
+/***/ "./layout/components/Gallery.js":
+/*!**************************************!*\
+  !*** ./layout/components/Gallery.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_set__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_set__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_set__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Image */ "./layout/components/Image.js");
+/* harmony import */ var _Gallery_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Gallery.scss */ "./layout/components/Gallery.scss");
+/* harmony import */ var _Gallery_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Gallery_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "/Users/paul/Projects/_Sites/Wedding/layout/components/Gallery.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+ // TODO:  update image object structure
+
+var GalleryImageRow = function GalleryImageRow(_ref) {
+  var galleryImages = _ref.galleryImages;
+  var rowClassName = galleryImages.reduce(function (result, galleryImage) {
+    return result ? result + '-' + galleryImage.aspect : galleryImage.aspect;
+  }, "");
+  var aspectCount = new _babel_runtime_corejs2_core_js_set__WEBPACK_IMPORTED_MODULE_0___default.a(galleryImages.map(function (galleryImage) {
+    return galleryImage.aspect;
+  })).size;
+  var counter = 0;
+  return __jsx("div", {
+    className: "gallery__row ".concat(rowClassName),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, galleryImages && galleryImages.map(function (_ref2) {
+    var url = _ref2.url,
+        alt = _ref2.alt,
+        ratio = _ref2.ratio;
+    return __jsx(GalleryImage, {
+      url: url,
+      alt: alt,
+      style: "image-".concat(counter),
+      ratio: ratio,
+      respectAspect: aspectCount > 1 ? false : true,
+      key: "gallery-image=".concat(++counter),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    });
+  }));
+};
+
+var GalleryImage = function GalleryImage(_ref3) {
+  var url = _ref3.url,
+      alt = _ref3.alt,
+      style = _ref3.style,
+      ratio = _ref3.ratio,
+      respectAspect = _ref3.respectAspect,
+      key = _ref3.key;
+
+  if (respectAspect) {
+    var splitParams = ratio && ratio.split("x");
+    var viewBoxParams = splitParams[0] + " " + splitParams[1];
+    return __jsx("div", {
+      className: "image__ratio ".concat(style),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, __jsx("svg", {
+      viewBox: "0 0 ".concat(viewBoxParams),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }), __jsx(_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      url: url,
+      alt: alt,
+      key: key,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }));
+  } else {
+    return __jsx("div", {
+      className: style,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, __jsx(_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      url: url,
+      alt: alt,
+      key: key,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }));
+  }
+}; // takes in a row
+
+
+var Gallery = function Gallery(_ref4) {
+  var galleryRows = _ref4.galleryRows;
+  return __jsx("div", {
+    className: "gallery__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, galleryRows && galleryRows.map(function (images) {
+    return __jsx(GalleryImageRow, {
+      galleryImages: images,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: this
+    });
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Gallery);
+
+/***/ }),
+
+/***/ "./layout/components/Image.js":
+/*!************************************!*\
+  !*** ./layout/components/Image.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Image.scss */ "./layout/components/Image.scss");
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Image_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/paul/Projects/_Sites/Wedding/layout/components/Image.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+ // TODO:  upgrade url to variants / srcset list
+
+var Image = function Image(_ref) {
+  var url = _ref.url,
+      alt = _ref.alt;
+  return __jsx("picture", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("img", {
+    src: url,
+    alt: alt,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Image);
 
 /***/ }),
 
@@ -389,6 +577,7 @@ function (_Component) {
         return __jsx(NavigationItem, {
           label: item.label,
           target: item.target,
+          key: item.key,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 48
@@ -21342,91 +21531,129 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _layout_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Page */ "./layout/Page.js");
 /* harmony import */ var _layout_components_TitleCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layout/components/TitleCard */ "./layout/components/TitleCard.js");
+/* harmony import */ var _layout_components_Gallery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layout/components/Gallery */ "./layout/components/Gallery.js");
 var _jsxFileName = "/Users/paul/Projects/_Sites/Wedding/pages/our-honeymoon.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
 var seo = {
   title: 'Our Honeymoon'
 };
+var galleryRows = [[{
+  url: '/images/honeymoon/001.jpg',
+  alt: 'Danielle at the Parthenon',
+  aspect: 'portrait',
+  ratio: '2x3'
+}, {
+  url: '/images/honeymoon/002.jpg',
+  alt: 'Paul at the Parthenon',
+  aspect: 'portrait',
+  ratio: '2x3'
+}], [{
+  url: '/images/honeymoon/008.jpg',
+  alt: 'Holding hands, showing off Danielle\'s Ring',
+  aspect: 'landscape',
+  ratio: '3x2'
+}], [{
+  url: '/images/honeymoon/003.jpg',
+  alt: 'Paul at the Pink Beach on Crete',
+  aspect: 'portrait',
+  ratio: '2x3'
+}, {
+  url: '/images/honeymoon/004.jpg',
+  alt: 'Danielle at the Pink Beach on Crete',
+  aspect: 'portrait',
+  ratio: '2x3'
+}], [{
+  url: '/images/honeymoon/013.jpg',
+  alt: 'Paul at the Pink Beach on Crete',
+  aspect: 'landscape',
+  ratio: '3x2'
+}, {
+  url: '/images/honeymoon/010.jpg',
+  alt: 'Danielle at the Pink Beach on Crete',
+  aspect: 'portrait',
+  ratio: '2x3'
+}]];
 
 var Honeymoon = function Honeymoon() {
   return __jsx(_layout_Page__WEBPACK_IMPORTED_MODULE_1__["default"], {
     seo: seo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 61
     },
     __self: this
   }, __jsx(_layout_components_TitleCard__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Honeymoon Memories",
-    image: "/static/images/honeymoon-hero.jpg",
+    image: "/images/honeymoon-hero.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 62
     },
     __self: this
   }), __jsx("div", {
     className: "content ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 66
     },
     __self: this
   }, __jsx("div", {
     className: "content__copy width__narrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 67
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 68
     },
     __self: this
-  }, "fROM MINI-MOON TO MAXI-MOON\u2026"), __jsx("p", {
+  }, "From Mini-Moon to Maxi-Moon\u2026"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 69
     },
     __self: this
   }, "After our wedding, we were lucky enough to celebrate our newlywed life with a quick mini-moon in Hawaii! (Shout out to our friends, Ko and Jess who got married while we were there!)"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 70
     },
     __self: this
   }, "Once Paul had accrued some vacation days after all the time off for the wedding (#thisamericanlife), we hopped on a plane at LAX with a dream and a cardigan, one of which was lost with our luggage when we arrived in Croatia. Thankfully it was the latter."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 71
     },
     __self: this
   }, "Together we toured the coast of the country, drinking wine (it\u2019s like $2 a glass), eating truffles (which are surprisingly cheap there!), and devouring seafood (also cheap!) We visited a number of Game of Thrones locations, and even got drunk where the dragons were held."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 72
     },
     __self: this
   }, "After Croatia, we did some island hoping in Greece, through Crete and Santorini, where we dusted off our wedding wear and were shocked to see that it still fit. Our hotel in Santorini, Honeymoon Petra, was fantastic and let us take photos throughout the resort (and even upgraded us to an awesome suite to boot!)"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 73
     },
     __self: this
   }, "We couldn\u2019t have done any of this without the generous gifts to our honeymoon fund from our awesome friends and family. We truly thank you, and want you to know that each of your gifts was enjoyed full-heartedly and we thought about all of you on each and every day of our trips. (Couples massage? CHECK. Fish pedicure? CHECK. Swanky hotel? CHECK. Lots of wine? QUADRUPLE CHECK.)"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 74
     },
     __self: this
   }, "We love you all and hope that your thank you cards (albeit quite late, we apologize, newlywed life has been busy!) got to you safely."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 75
     },
     __self: this
   }, "If you\u2019d like to see some photos from our trip, please feel free to scroll the gallery below or follow Danielle on ", __jsx("a", {
@@ -21434,34 +21661,48 @@ var Honeymoon = function Honeymoon() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 75
     },
     __self: this
   }, "Instagram"), "."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 76
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 76
     },
     __self: this
   }, "Love,")), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 77
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 77
     },
     __self: this
-  }, "Danielle & Paul")))));
+  }, "Danielle & Paul"))), __jsx("div", {
+    className: "content__gallery",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, __jsx(_layout_components_Gallery__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    galleryRows: galleryRows,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Honeymoon);
