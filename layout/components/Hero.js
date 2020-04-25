@@ -5,9 +5,9 @@ const Hero = ({ text, image, height }) => {
     backgroundImage: `url('${image}')`
   }
   return (
-    <div className={`parallax__group hero ${height === 'large' ? 'hero__large' : height == 'medium' ? 'hero__medium' : 'hero__small'}`}>
-      <div className="hero__image parallax__layer parallax__layer-back" style={imageStyle}></div>
-      <div className="hero__content parallax__layer parallax__layer-base">
+    <div className={`hero ${height === 'large' ? 'hero__large' : height == 'medium' ? 'hero__medium' : 'hero__small'}`}>
+      <div className="hero__image" style={imageStyle}></div>
+      <div className="hero__content">
         <h1>{ text }</h1>
       </div>
     </div>

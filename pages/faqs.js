@@ -2,15 +2,19 @@ import Page from '../layout/Page';
 import TitleCard from '../layout/components/TitleCard';
 import { FAQBlock, FAQItem } from '../layout/components/FAQ';
 
+const seo = {
+  title: 'FAQs'
+}
+
 const FAQs = () => (
-  <Page>
+  <Page seo={seo} >
     <TitleCard
       title="FAQs"
       lede="You got questions. We got answers. And if we don't answer them here... ask it anyway and we'll try to answer as best we can!"
     />
     <div className="content">
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_0427.jpg"
+        image="/images/danielle_paul-IMG_0427.jpg"
         alignment="left"
         border={true}
       >
@@ -27,7 +31,7 @@ const FAQs = () => (
       </FAQBlock>
 
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_0096.jpg"
+        image="/images/danielle_paul-IMG_0096.jpg"
         alignment="right"
         border={true}
       >
@@ -42,7 +46,7 @@ const FAQs = () => (
       </FAQBlock>
 
       <FAQBlock
-        image="/static/images/danielle_paul-IMG_6767.jpg"
+        image="/images/danielle_paul-IMG_6767.jpg"
         alignment="left"
         border={false}
       >

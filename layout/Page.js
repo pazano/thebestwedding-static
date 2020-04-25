@@ -4,10 +4,10 @@ import Footer from './Footer.js';
 
 import './Page.scss';
 
-export default ({ children }) => (
+export default ({ seo, children }) => (
   <div className="main">
-      <Meta />
-      <div className="page parallax">
+      <Meta seo={seo} />
+      <div className="page">
         <Header />
           { children }
         <Footer />

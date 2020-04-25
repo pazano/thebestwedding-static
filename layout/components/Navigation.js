@@ -48,6 +48,7 @@ class Navigation extends Component {
             <NavigationItem
               label={item.label}
               target={item.target}
+              key={item.key}
             />
           ))}
         </div>

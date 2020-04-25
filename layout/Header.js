@@ -15,23 +15,28 @@ const Header = () => {
   const fakeMenu = [
     {
       label: 'Our Story',
-      target: '/',
+      target: '/how-we-met',
+      key: 'menu-our-story'
     },
     {
       label: 'Our Day',
-      target: '/our-day'
+      target: '/our-day',
+      key: 'menu-our-day'
     },
     {
-      label: 'When & Where',
-      target: '/when-where'
+      label: 'Honeymoon',
+      target: '/our-honeymoon',
+      key: 'menu-honeymoon'
     },
     {
-      label: 'FAQs',
-      target: '/faqs'
+      label: 'Peep the Pics',
+      target: '/peep-the-pics',
+      key: 'menu-pics'
     },
     {
       label: 'Registry',
-      target: '/registry'
+      target: '/registry',
+      key: 'menu-registry'
     }
   ];
 
